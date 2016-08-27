@@ -11,6 +11,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+gem 'paperclip'
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
 
 # gem 'unicorn'
 # gem 'capistrano-rails', group: :development
