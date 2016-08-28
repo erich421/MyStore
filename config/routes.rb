@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'shop' => 'pages#shop'
 
+  resources :carts
+
 end
