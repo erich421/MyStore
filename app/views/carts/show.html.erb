@@ -17,6 +17,14 @@
         <div class="container">
           <div class="col-md-12">
             <h2>Cart Details</h2>
+            <br>
+            <%= render 'carts/cart' %>
+            <br>
+            <h5>Total: <%= number_to_currency @cart.total_price %></h5>
+            <br>
+            <%= link_to 'Back to Store', shop_path %>
+            <br>
+            <%= link_to 'Empty Your Cart', @cart, method: :delete, data: {confirm: 'Are you sure?'} %>
           </div>
         </div>
       </section>

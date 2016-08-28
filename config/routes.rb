@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'shop' => 'pages#shop'
 
   resources :carts
+  resources :product_items
 
 end

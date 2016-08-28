@@ -14,6 +14,7 @@ gem 'font-awesome-rails'
 gem 'paperclip'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
+gem 'toastr-rails'
 
 # gem 'unicorn'
 # gem 'capistrano-rails', group: :development
