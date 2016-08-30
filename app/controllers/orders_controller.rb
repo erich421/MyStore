@@ -22,6 +22,7 @@ class OrdersController < ApplicationController
     if @order.save
       Cart.destroy(session[:cart_id])
       session[:cart_id] = nil
+      OrderNotifier.received(@order).deliver
       redirect_to root_url, notice: 'Thank You for Your Order!'
     else
       render :new, notice: 'Please check your form'
